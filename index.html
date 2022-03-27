@@ -16,8 +16,60 @@
                 }
             }
         }
+        
     </script>
     <body>
-        <h1 class="text-3xl font-bold underline text-clifford">Hello Hello</h1>
+        <!--testing-->
+          <div class="home">
+            <div class="">
+                <div class="w-52 sidebar-container">
+                    <div class="fixed top-0 left-0 w-52 min-h-screen m-0 flex flex-col bg-gray-900
+                    text-white shadow-lg">
+                    <img class="self-center h-36 w-36 rounded-full my-3 border-2 border-gray-100 shadow-sm" 
+                        src="jfchappell.jpg"/>
+                        
+                    <i class="relative flex items-center justify-center shadow-lg
+                        h-14 py-0 bg-gray-800 text-purple-500
+                        hover:bg-purple-500 hover:text-white
+                        hover:rounded-xl transition-all duration-300" onclick="changeToAbout()">About</i><br>
+                    <i class="relative flex items-center justify-center shadow-lg
+                        h-14 py-0 bg-gray-800 text-purple-500
+                        hover:bg-purple-500 hover:text-white
+                        hover:rounded-xl transition-all duration-300" onclick="changeToEducation()">Education</i><br>
+                    <i class="relative flex items-center justify-center shadow-lg
+                        h-14 py-0 bg-gray-800 text-purple-500
+                        hover:bg-purple-500 hover:text-white
+                        hover:rounded-xl transition-all duration-300" onclick="changeToWorkExperience()">Work Experience</i><br>
+                    <i class="relative flex items-center justify-center shadow-lg
+                        h-14 py-0 bg-gray-800 text-purple-500
+                        hover:bg-purple-500 hover:text-white
+                        hover:rounded-xl transition-all duration-300" onclick="changeToProjects()">Projects</i><br>
+                    <a href="https://www.linkedin.com/in/jake-chappell-580357199/" 
+                        class="relative flex items-center justify-center shadow-lg
+                        h-14 py-0 bg-gray-800 text-purple-500 no-underline
+                        hover:bg-purple-500 hover:text-white
+                        hover:rounded-xl transition-all duration-300">LinkedIn Profile</a><br>
+                    </div>
+                </div>
+                <div id="home-container" class="pl-52">
+                    <div v-if="this.activePage == 'about'">
+                    <h1>Jake Chappell</h1>
+                    <h3>About</h3>
+                    </div>
+                    <div v-if="this.activePage == 'education'">
+                    <h1>Jake Chappell</h1>
+                    <h3>Education</h3>
+                    </div>
+                    <div v-if="this.activePage == 'workExperience'">
+                    <h1>Jake Chappell</h1>
+                    <h3>Work Experience</h3>
+                    </div>
+                    <div v-if="this.activePage == 'projects'">
+                    <h1>Jake Chappell</h1>
+                    <h3>Projects</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
